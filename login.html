@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 실제 모바일에서 구동해보면.. viewport문제로 인해 글씨가 너무 작게 보임 -->
+    <!-- why? 모바일의 웹브라우저는 viewport가 무조건 980으로 고정되어 있음. 실제 디바이스의 viewport와 상관없이 크기가 결정됨 -->
+    <!-- viewport[웹 브라우저의 document영역의 가상의 사각형영역]는 해상도와는 다름. Nexus 5x의 해상도는 1080*1920이지만 viewport는 412*712임-->
+    <!-- 넥서스 5x의 뷰포트 412에서 200px인 img의 width가 모바일 웹브라우저에서는 기본 뷰포트크기인 980에서는 대략 2배정도 작아진 100px정도의 크기임 -->
+    <!-- 디바이스의 실제 뷰포트로 변경해주는 작업이 필요 -->
+    <!-- <meta name="viewport" content="width=412, initial-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=600, initial-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=980, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>로그인페이지</title>
+    <!-- 구글Font https://fonts.google.com/?subset=korean -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Hi Melody', cursive;
+        }
+        .mytitle {
+            margin-top: 50px;
+            background-color: green;
+            width: 300px;
+            height: 200px;
+            color: white;
+            text-align: center;
+
+            /*이미지 url을 넣기위한 background 3세트*/
+            background-image: url('https://cdn.pixabay.com/photo/2017/07/28/00/57/bank-2547356_960_720.jpg');
+            background-size: cover;
+            background-position: center;
+
+            border-radius: 10px;
+            padding-top: 20px;
+        }
+
+        .mybtn {
+            
+            width: 300px;
+            height: 50px;
+            background-color: brown;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+            font-size: 20px;
+
+        }
+
+        .wrap {
+            
+            width: 300px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="mytitle">
+            <h1>로그인 페이지</h1>
+            <h5>아이디, 비밀번호를 입력해주세요</h5>
+        </div>
+        <p>ID: <input type="text" /></p>
+        <p>PW: <input type="text" /></p>
+        <button class="mybtn">로그인하기</button>
+    </div>
+</body>
+
+</html>
