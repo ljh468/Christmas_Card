@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020년을 무사히 보내며</title>
+
+    <!-- christmas favicon -->
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOHv5U7i5W1YHfUmpXJCySHfHCx5CaF4eaGg&usqp=CAU">
+
+    <!-- 공유할때 사용하는 og태그 -->
+    <meta property="og:image" content="https://www.sampleposts.com/wp-content/uploads/2020/05/merry-christmas-800x400.jpg">
+    <meta property="og:title" content="재훈이의 카드">
+    <meta property="og:description" content="2020년을 추억하며">
+
+    <!-- 구글Font https://fonts.google.com/?subset=korean -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    <style>
+        * {
+            font-family: 'Hi Melody', cursive;
+        }
+
+        body {
+            background-color: #9b070f;
+        }
+
+        .envelope {
+
+            width: 300px;
+            height: 300px;
+
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+
+        }
+
+        .letter-close {
+            display: block;
+        }
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://item.kakaocdn.net/do/fe935bc49ef56d54e1c65caa99eba1e3f43ad912ad8dd55b04db6a64cddaf76d');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+            border-radius: 100%;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 2px white;
+        }
+
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color: white;
+            text-align: center;
+        }
+
+        .messagebox {
+            background-color: ivory;
+            width: 400px;
+            margin: auto;
+            text-align: center;
+
+            color: brown;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            font-size: 25px;
+            font-weight: 100;
+            line-height: 30px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+            border-radius: 20px;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+                font-size: 23px;
+            }
+
+            .rtan {
+
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+
+            }
+
+            h1 {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-size: 28px;
+            }
+            .envelope {
+                margin: 120px auto 0px auto;
+            }
+        }
+    </style>
+
+    <script>
+
+        function open_letter(){
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'   
+        }
+        function go_rtan(){
+            alert('앗, 어떻게 찾았지!')
+            window.location.href='https://t1.daumcdn.net/liveboard/share/fadab642cfac485a8c99d16e35ba86f2.JPG'
+        }
+
+    </script>    
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h1 class="envelope-msg">봉투를 열어봐!</h2>
+    </div>
+
+
+    <div class="letter-open" onclick="go_rtan()">
+        <div class="rtan"></div>
+        <h1>2020년 메리크리스마스!!</h1>
+
+        <div class="messagebox">
+            Merry Christmas ~!! <br />
+            올해 이런저런 일이 많았는데 <br />
+            덕분에 무사하고 즐거운 한해였어. <br />
+            내년에도 잘부탁합니다.^^ <br />
+            코로나때문에 연말에 보지 못했는데, <br />
+            내년에는 자주 봤으면 좋겠습니다. <br />
+            <p class="from">2020.12.24 재훈이가</p>
+        </div>
+    </div>
+        
+</body>
+
+</html>
